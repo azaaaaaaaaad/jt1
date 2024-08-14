@@ -7,8 +7,9 @@ import { GiGraduateCap } from "react-icons/gi";
 import { HiOutlineDocumentReport } from "react-icons/hi";
 import { IoMdExit, IoMdSunny } from "react-icons/io";
 import { IoSettingsSharp } from "react-icons/io5";
-import { MdOutlineFormatOverline } from "react-icons/md";
+import { MdKeyboardArrowDown, MdOutlineFormatOverline } from "react-icons/md";
 import { TfiStatsUp } from "react-icons/tfi";
+import Table from "./Table";
 
 
 // export default Dashboard;
@@ -202,7 +203,7 @@ const Dashboard = () => {
                                 <div className="card-body bg-violet-100 rounded-lg">
                                     <div className="flex justify-between">
                                         <h2 className="card-title font-bold text-4xl">12</h2>
-                                        <h2> <FaBarsProgress  className="text-3xl" /></h2>
+                                        <h2> <FaBarsProgress className="text-3xl" /></h2>
                                     </div>
                                     <p>Course <br /> in Progress</p>
                                     <div className="card-actions justify-end">
@@ -211,7 +212,31 @@ const Dashboard = () => {
                                 </div>
                             </div>
                         </div>
+
+
+
+                        {/* chart  */}
+                        <div>
+
+                        </div>
+
+
+                        {/* table  */}
+
+                        <div className="lg:p-32 b">
+                            <div className="bg-violet-100 rounded-lg">
+                                <div className="flex justify-between">
+                                    <h1>Reminders</h1>
+                                    <button className="flex items-cente">Monthly <MdKeyboardArrowDown /></button>
+                                </div>
+                                <Table />
+                            </div>
+                        </div>
+
+
                     </div>
+
+
                 </div>
             </div>
         </div>
